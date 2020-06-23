@@ -4,14 +4,20 @@
 
 namespace
 {
-    void life_the_universe_and_everthing()
+    void test_global_function()
     {
         assert(answer() == 42);
+    }
+
+    void test_instance_method()
+    {
+        assert(hiker().answer() == 42);
     }
 }
 
 int main()
 {
-    life_the_universe_and_everthing();
+    test_global_function();
+    test_instance_method();
     std::cout << "All tests passed\n";
 }
