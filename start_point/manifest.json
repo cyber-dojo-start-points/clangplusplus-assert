@@ -1,6 +1,6 @@
 {
-  "image_name": "cyberdojofoundation/clangpp_assert:02b9551",
-  "display_name": "C++ (clang++), assert",
+  "image_name": "ghcr.io/cyber-dojo-languages/clangplusplus_assert:ecf1a38",
+  "display_name": "C++ (clang++ 14.0.0), assert",
   "visible_filenames": [
     "hiker.tests.cpp",
     "hiker.cpp",
