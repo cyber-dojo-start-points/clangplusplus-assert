@@ -12,3 +12,15 @@ o) I had to add this line to the docker run options
 o) I had to remove this line from the docker run options
       --ulimit data=4*GB
 
+The reason is from the runner microservice which has this:
+
+  def clang?(image_name)
+    image_name.start_with?('cyberdojofoundation/clang')
+  end
+
+which needs to be updated to
+
+  def clang?(image_name)
+    image_name.start_with?('cyberdojofoundation/clang') ||
+    image_name.start_with?('ghcr.io/cyber-dojo-languages/clang')
+  end
