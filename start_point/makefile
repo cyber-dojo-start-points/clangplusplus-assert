@@ -11,8 +11,7 @@ CXXFLAGS += -Wunreachable-code
 
 CXXFLAGS += -fprofile-arcs -ftest-coverage
 
-#CXXFLAGS += -fsanitize=address # docker run has --ulimit flag preventing this
-CXXFLAGS += -fsanitize=leak
+CXXFLAGS += -fsanitize=leak,address
 CXXFLAGS += -fno-sanitize-recover=undefined
 CXXFLAGS += -fno-omit-frame-pointer
 
