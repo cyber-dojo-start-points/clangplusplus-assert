@@ -1,0 +1,7 @@
+{
+  "matches": [ "error: use of undeclared identifier 'ansewr'; did you mean 'answer'\\?" ],
+  "match_counts": {
+    "Assertion .* failed\\.": 0,
+    "^All tests passed$": 0
+  }
+}

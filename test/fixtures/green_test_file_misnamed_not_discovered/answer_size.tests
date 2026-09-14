@@ -1,0 +1,14 @@
+#include "hiker.hpp"
+#include <cassert>
+
+// The extension was left off, so the makefile's *.cpp and *.hpp wildcards
+// both miss this file and clang++ never sees it. The assertion is one that
+// would fail, so that a green says it really was not built rather than that
+// it was built and passed.
+namespace
+{
+    void the_answer_is_three_digits_long()
+    {
+        assert(answer() > 99);
+    }
+}
